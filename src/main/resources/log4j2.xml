@@ -38,23 +38,23 @@
             <AppenderRef ref="console"/>
             <AppenderRef ref="file"/>
         </AsyncLogger>
-        <AsyncLogger  name="org.springframework" level="warn" />
-        <AsyncLogger name="org.springframework.webflow" level="warn" />
-        <AsyncLogger name="org.springframework.web" level="warn" />
-        <Logger name="org.pac4j" level="warn" />
+        <AsyncLogger  name="org.springframework" level="debug" />
+        <AsyncLogger name="org.springframework.webflow" level="debug" />
+        <AsyncLogger name="org.springframework.web" level="debug" />
+        <Logger name="org.pac4j" level="debug" />
 
-        <AsyncLogger name="perfStatsLogger" level="info" additivity="false" includeLocation="true">
+        <AsyncLogger name="perfStatsLogger" level="debug" additivity="false" includeLocation="true">
             <AppenderRef ref="perfFileAppender"/>
         </AsyncLogger>
 
-        <AsyncLogger name="org.jasig.cas.web.flow" level="info" additivity="true" includeLocation="true">
+        <AsyncLogger name="org.jasig.cas.web.flow" level="debug" additivity="true" includeLocation="true">
             <AppenderRef ref="file"/>
         </AsyncLogger>
-        <AsyncLogger name="org.jasig.inspektr.audit.support" level="info" includeLocation="true">
+        <AsyncLogger name="org.jasig.inspektr.audit.support" level="debug" includeLocation="true">
             <AppenderRef ref="auditlogfile"/>
             <AppenderRef ref="file"/>
         </AsyncLogger>
-        <AsyncRoot level="error">
+        <AsyncRoot level="debug">
             <AppenderRef ref="console"/>
         </AsyncRoot>
     </Loggers>
